@@ -10,7 +10,7 @@ const BestSellingBooks = () => {
         elementum lacus arcu, sit dolor ipsum, ac felis, egestas vel tortor eget
         aenean.
       </p>
-      <CardList />
+      <CardList num={4}/>
       <button className="px-5 py-3 text-secondary duration-700 border border-primary hover:bg-primary hover:text-white rounded-lg mt-10">
         Shop All Books
       </button>

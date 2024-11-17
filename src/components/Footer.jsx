@@ -19,8 +19,8 @@ const Footer = () => {
         </ul>
         <ul className="flex items-center gap-5 text-white">
           {footerSocial.map((item, i) => (
-            <Link to="#">
-              <li key={i}>{item.icon}</li>
+            <Link to="#" key={i}>
+              <li>{item.icon}</li>
             </Link>
           ))}
         </ul>

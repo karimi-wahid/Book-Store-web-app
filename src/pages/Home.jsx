@@ -9,7 +9,7 @@ import BeTheFirst from "../components/BeTheFirst";
 const Home = () => {
   return (
     <div className="w-full px-5 space-y-32">
-      <Hero />
+      <Hero fontSize={'7xl'} secondBtn={true}/>
       <div>
         <AuthorBiography />
         <Awards />
