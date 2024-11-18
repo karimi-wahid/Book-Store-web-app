@@ -41,3 +41,34 @@ export const audioBook = [
     },
 ]
 
+export const award1 = {text: 'Etiam donec fusce id hendrerit feugiat mauris etiam aenean ipsum eu iaculis integer gravida massa facilisi aliquam venenatis turpis proin nunc ac viverra sed ac pharetra non sit elit ullamcorper viverra tristique.'}
+export const award2 = {text: 'Sem eget sed pulvinar erat leo tortor bibendum orci, ac donec elementum sed et bibendum odio libero sed erat volutpat est quam congue praesent felis sed cras viverra feugiat et vitae adipiscing et nullam etiam placerat viverra nibh mi euismod orci neque vulputate varius vestibulum ante eget viverra iaculis velit, ultricies ante eget at placerat ac tincidunt facilisi augue neque condimentum volutpat sed dolor.'}
+export const award3 = {text: 'Magna tellus pulvinar vitae adipiscing imperdiet viverra nunc, egestas sem vel turpis amet ut fusce sagittis, quisque suspendisse fames eget risus quam posuere eu massa, consequat nec vestibulum fermentum velit nunc, dictum dui orci urna vitae est morbi purus amet, tortor elementum eu convallis turpis nibh odio enim.'}
+
+export const authorFirstBook = [
+    {
+        date: '1986',
+        title: 'My First Book',
+        text: 'Quisque suspendisse fames eget risus quam posuere eu massa, consequat nec vestibulum fermentum velit nunc, dictum dui orci urna vitae.',
+    },
+    {
+        date: '1992',
+        title: 'Released on Store',
+        text: 'Aliquam mattis lorem fermentum neque, quam arcu malesuada id quis est adipiscing in fringilla nulla ultricies.',
+    },
+    {
+        date: '1998',
+        title: 'US Bestselling Book',
+        text: 'Ultrices ultrices sed ultrices suspendisse quisque in etiam adipiscing ligula rhoncus vivamus tincidunt amet sem cursus hendrerit nulla',
+    },
+    {
+        date: '1999',
+        title: 'My First Award',
+        text: 'Cras amet amet in egestas nibh vestibulum feugiat bibendum tempus ut ultricies risus aliquam vestibulum malesuada vitae sit.',
+    },
+    {
+        date: '2006',
+        title: "World's #1 Bestselling Author",
+        text: 'Curabitur malesuada turpis mauris mollis eget tincidunt lacus fusce purus dolor hac viverra viverra sagittis augue purus venenatis.',
+    },
+]
