@@ -20,7 +20,7 @@ const Footer = () => {
         <ul className="flex items-center gap-5 text-white">
           {footerSocial.map((item, i) => (
             <Link to="#" key={i}>
-              <li>{item.icon}</li>
+              <li className="hover:scale-125 duration-1000 hover:text-primary">{item.icon}</li>
             </Link>
           ))}
         </ul>

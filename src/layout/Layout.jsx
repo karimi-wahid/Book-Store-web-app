@@ -10,9 +10,7 @@ const Layout = () => {
     <div className='bg-slate-100 relative'>
         <Sidebar sideOpen={sideOpen} setSideOpen={setSideOpen}/>
         <Navbar setSideOpen={setSideOpen}/>
-        <div className='px-10'>
         <Outlet />
-        </div>
         <Footer />
     </div>
   )

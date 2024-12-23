@@ -3,24 +3,14 @@ import { IoClose, IoMenu } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 
 const Sidebar = ({sideOpen, setSideOpen}) => {
-
-    useEffect(() => {  
-        // Disable scrollbar based on state  
-        document.body.style.overflow = sideOpen ? 'hidden' : 'auto';  
-        
-        // Cleanup function to reset the overflow property  
-        return () => {  
-            document.body.style.overflow = 'auto';  
-        };  
-    }, [sideOpen]);
-    
-
     const handleSide = () => setSideOpen(!sideOpen)
+
+
   return (
     <>
     {sideOpen ? 
-    <div className='w-full h-screen absolute z-50 bg-black bg-opacity-30'>
-    <div className='bg-white w-full h-screen absolute top-0 right-0 md:w-[70%] lg:w-[41%] flex items-center flex-col p-5 z-50'>
+    <div className='w-full h-full absolute z-50 bg-black bg-opacity-40'>
+    <div className='bg-white w-full h-screen fixed top-0 right-0 md:w-[70%] lg:w-[41%] flex items-center flex-col p-5 z-50 rounded-l-lg'>
         <div className='w-full flex items-center justify-between p-3 border-b border-e-neutral-300 text-grayLight'>
             <p>Shopping Cart</p>
             <IoClose onClick={handleSide} size={25} className='cursor-pointer hover:scale-110 transition-transform duration-300'/>

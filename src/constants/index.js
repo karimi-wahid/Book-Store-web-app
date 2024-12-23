@@ -72,3 +72,23 @@ export const authorFirstBook = [
         text: 'Curabitur malesuada turpis mauris mollis eget tincidunt lacus fusce purus dolor hac viverra viverra sagittis augue purus venenatis.',
     },
 ]
+
+export const blogText = [
+    {
+        imgUrl: 'https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-blog-img-03-1024x614.jpg',
+        title: 'Outing justo morbi wild',
+        comment: 'Leave a Comment / Uncategorized / akbarh',
+        text: 'Aliquam sed in egestas gravida amet mattis sagittis, semper morbi vitae, egestas blandit duis facilisis adipiscing fermentum aenean nunc nibh accumsan, ornare enim at interdum mi arcu, ut magna ultrices odio dictumst aliquam tincidunt dictum pharetra vestibulum aliquam aliquet suspendisse. Sed et aliquam tincidunt ut sed porttitor nunc et etiam molestie arcu donec venenatis nulla […]',
+    },
+    {
+        imgUrl: 'https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-blog-img-02-1024x614.jpg',
+        title: 'Eget elementum on train',
+        comment: 'Aliquam sed in egestas gravida amet mattis sagittis, semper morbi vitae, egestas blandit duis facilisis adipiscing fermentum aenean nunc nibh accumsan, ornare enim at interdum mi arcu, ut magna ultrices odio dictumst aliquam tincidunt dictum pharetra vestibulum aliquam aliquet suspendisse. Sed et aliquam tincidunt ut sed porttitor nunc et etiam molestie arcu donec venenatis nulla',
+    },
+    {
+        imgUrl: 'https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-blog-img-01-1024x614.jpg',
+        title: 'Visit sagittis malesuada vestibulum',
+        comment: 'Leave a Comment / Uncategorized / akbarh',
+        text: 'Aliquam sed in egestas gravida amet mattis sagittis, semper morbi vitae, egestas blandit duis facilisis adipiscing fermentum aenean nunc nibh accumsan, ornare enim at interdum mi arcu, ut magna ultrices odio dictumst aliquam tincidunt dictum pharetra vestibulum aliquam aliquet suspendisse. Sed et aliquam tincidunt ut sed porttitor nunc et etiam molestie arcu donec venenatis nulla',
+    },
+]

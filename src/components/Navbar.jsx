@@ -10,10 +10,10 @@ function Navbar({setSideOpen}) {
 
 
   return (
-    <nav className="relative">
-      <div className="container px-6 py-4 mx-auto">
+    <nav className="relative h-[104px] flex items-center justify-center">
+      <div className="container px-6 py-5 mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between ">
             <Link to="/">
               <img
                 className="w-auto h-6 sm:h-7"
@@ -71,7 +71,7 @@ function Navbar({setSideOpen}) {
 
           {/* Mobile Menu open: "block", Menu closed: "hidden" */}
           <div
-            className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-slate-50 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${
+            className={`absolute inset-x-0 z-20 lg:w-auto w-full px-6 py-4 transition-all duration-300 ease-in-out bg-slate-50 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${
               isOpen
                 ? "translate-x-0 opacity-100"
                 : "opacity-0 -translate-x-full"
@@ -95,17 +95,18 @@ function Navbar({setSideOpen}) {
             </div>
           </div>
           <div className="hidden  lg:flex items-center mt-4 lg:mt-0">
-            <div className="flex justify-end py-1 w-[200px] p-1 gap-3">
+            <div className="flex justify-end py-1 w-[150px] p-1 gap-3">
               <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                className={`overflow-hidden transition-all duration-500 ease-in-out flex items-center ${
                   inputOpen ? "w-full opacity-100" : "w-0 opacity-0"
                 }`}>
                 <input
                   type="text"
-                  className="py-1 w-full border border-neutral-300 px-2 rounded-lg outline-none"
+                  className="py-2 w-full border border-neutral-300 px-2 rounded-lg outline-none"
                   placeholder="Search here..."
                 />
               </div>
+              
               <CiSearch
                 onClick={() => setInputOpen(!inputOpen)}
                 size={30}

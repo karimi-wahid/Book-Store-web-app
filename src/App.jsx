@@ -3,6 +3,8 @@ import Layout from "./layout/Layout"
 import Home from "./pages/Home"
 import Books from "./pages/Books"
 import AboutAuthor from "./pages/AboutAuthor"
+import Blog from "./pages/Blog"
+import Contact from "./pages/Contact"
 function App() {
   const router = createBrowserRouter([
     {
@@ -20,6 +22,14 @@ function App() {
         {
           path: '/author',
           element: <AboutAuthor />
+        },
+        {
+          path: '/blogs',
+          element: <Blog />
+        },
+        {
+          path: '/contact',
+          element: <Contact />
         },
       ]
       
