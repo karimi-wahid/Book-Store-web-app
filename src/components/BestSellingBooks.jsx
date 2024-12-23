@@ -1,5 +1,6 @@
 import React from "react";
 import CardList from "./CardList";
+import { Link } from "react-router-dom";
 
 const BestSellingBooks = () => {
   return (
@@ -11,9 +12,11 @@ const BestSellingBooks = () => {
         aenean.
       </p>
       <CardList num={4}/>
+      <Link to='/books'>
       <button className="px-5 py-3 text-secondary duration-700 border border-primary hover:bg-primary hover:text-white rounded-lg mt-10">
         Shop All Books
       </button>
+      </Link>
     </div>
   );
 };

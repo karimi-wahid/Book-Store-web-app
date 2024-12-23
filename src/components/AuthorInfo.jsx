@@ -2,7 +2,7 @@ import React from 'react'
 
 const AuthorInfo = () => {
   return (
-    <div className='flex lg:justify-end items-center my-10'>
+    <div className='flex lg:justify-end items-center my-10 p-10'>
         <div className='grid grid-cols-1 md:grid-cols-2 w-[70%] items-center gap-8'>
             <img src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/04/author-book-store-author-img.jpg" alt=""
             className='w-[400px] h-[400px] order-2 lg:order-1' />

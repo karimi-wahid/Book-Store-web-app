@@ -3,8 +3,8 @@ import { FaMailBulk } from 'react-icons/fa'
 import {footerSocial} from '../constants/footer'
 const ContactForm = () => {
   return (
-    <div className='flex justify-between  my-10 px-10'>
-        <div>
+    <div className='grid grid-cols-1 lg:grid-cols-4 my-10 px-10 gap-10'>
+        <div className='order-2 lg:order-1'>
             <div className='flex gap-4'>
                 <FaMailBulk size={25} className='text-primary'/>
                 <p className='text-grayLight grid'>
@@ -14,7 +14,7 @@ const ContactForm = () => {
                 </p>
             </div>
         </div>
-        <form className=' w-2/4'>
+        <form className='col-span-2 order-1 lg:order-2'>
             <h1 className='text-4xl font-semibold mb-3'>Send a Message</h1>
             <p className='text-grayLight mb-14'>Ultrices dui maecenas quisque cras dui sed porttitor aliquam morbi libero egestas lacus sed.</p>
 
@@ -29,7 +29,7 @@ const ContactForm = () => {
                 <button type='submit' className='p-3 border border-primary hover:bg-primary hover:text-white duration-1000'>Send Message</button>
             </div>
         </form>
-        <div className='flex gap-5 text-secondary'>
+        <div className='flex gap-5 text-secondary order-3'>
             {footerSocial.map((icon ,i) => (
             <div className='hover:text-black cursor-pointer hover:scale-125 duration-1000' key={i}>{icon.icon}</div>
         ))}

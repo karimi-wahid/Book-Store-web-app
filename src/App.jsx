@@ -5,6 +5,7 @@ import Books from "./pages/Books"
 import AboutAuthor from "./pages/AboutAuthor"
 import Blog from "./pages/Blog"
 import Contact from "./pages/Contact"
+import SingleBook from "./pages/SingleBook"
 function App() {
   const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ function App() {
         {
           path: '/books',
           element: <Books />
+        },
+        {
+          path: '/books/:bookName',
+          element: <SingleBook />
         },
         {
           path: '/author',

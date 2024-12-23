@@ -7,7 +7,7 @@ const Header = ({imgUrl, title}) => {
     backgroundRepeat: 'no-repeat'}}>
 
         <h1 className='text-6xl font-[600]'>{title}</h1>
-        <p className='text-grayLight text-center lg:w-[60%]'>Porttitor in nibh id aliquet quam aliquam aliquet pulvinar integer dolor quis elementum, dui cursus nisi, nunc viverra nulla fringilla.</p>
+        <p className='text-grayLight text-center w-[60%]'>Porttitor in nibh id aliquet quam aliquam aliquet pulvinar integer dolor quis elementum, dui cursus nisi, nunc viverra nulla fringilla.</p>
 
     </div>
   )

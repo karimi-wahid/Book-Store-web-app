@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { navItems } from "../constants/NavItems";
 import { FaBasketShopping } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
@@ -7,6 +7,12 @@ import { CiSearch } from "react-icons/ci";
 function Navbar({setSideOpen}) {
   const [isOpen, setIsOpen] = useState(false);
   const [inputOpen, setInputOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleSearch = () => {
+    setInputOpen(!inputOpen);
+    navigate('/books')
+  }
 
 
   return (
@@ -108,7 +114,7 @@ function Navbar({setSideOpen}) {
               </div>
               
               <CiSearch
-                onClick={() => setInputOpen(!inputOpen)}
+                onClick={() => handleSearch()}
                 size={30}
                 className="cursor-pointer"
               />
