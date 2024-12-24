@@ -1,8 +1,15 @@
 import React from "react";
 import { CiShop } from "react-icons/ci";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { addToCart } from "../redux/CartSlice";
 
 const Card = ({ data }) => {
+  const dispatch = useDispatch();
+  const handleAddToCart = (item) => {
+    dispatch(addToCart(item));
+  }
+  
   return (
     <>
       {data.map((item, index) => (
@@ -13,6 +20,7 @@ const Card = ({ data }) => {
         
             <div className="w-full h-full hidden group-hover:flex items-center justify-center">
               <CiShop
+                onClick={()=> handleAddToCart(item)}
                 size={20}
                 className="w-8 h-8 absolute top-2 right-8 bg-gray-100 bg-opacity-80 hover:bg-opacity-100 cursor-pointer hover:scale-110 rounded-full p-1 duration-300 "
               />

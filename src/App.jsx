@@ -6,6 +6,8 @@ import AboutAuthor from "./pages/AboutAuthor"
 import Blog from "./pages/Blog"
 import Contact from "./pages/Contact"
 import SingleBook from "./pages/SingleBook"
+import Cart from "./pages/Cart"
+import Checkout from "./pages/Checkout"
 function App() {
   const router = createBrowserRouter([
     {
@@ -36,6 +38,14 @@ function App() {
           path: '/contact',
           element: <Contact />
         },
+        {
+          path: '/cart',
+          element: <Cart />
+        },
+        {
+          path: '/payment/checkout',
+          element: <Checkout />
+        }
       ]
       
     }

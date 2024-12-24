@@ -3,11 +3,14 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { navItems } from "../constants/NavItems";
 import { FaBasketShopping } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
+import { useSelector } from "react-redux";
 
 function Navbar({setSideOpen}) {
   const [isOpen, setIsOpen] = useState(false);
   const [inputOpen, setInputOpen] = useState(false);
   const navigate = useNavigate();
+  const totalQuantity = useSelector(state => state.cart.quantity)
+  const totalPrice = useSelector(state => state.cart.price)
 
   const handleSearch = () => {
     setInputOpen(!inputOpen);
@@ -30,11 +33,11 @@ function Navbar({setSideOpen}) {
 
             {/* Mobile menu button */}
             <div className="flex lg:hidden items-center gap-5">
-              <div className="flex gap-3 p-3 text-primary relative">
-                <span>$0.00</span>
+              <div className="flex gap-3 p-3 text-primary relative cursor-pointer" onClick={() => setSideOpen(true)}>
+                <span>${totalPrice > 0 ? totalPrice : '0.00'}</span>
                 <FaBasketShopping size={25} />
                 <p className="absolute top-0 right-0 w-5 h-5 p-2 flex items-center justify-center text-white bg-primary rounded-full">
-                  0
+                  {totalQuantity > 0 ? totalQuantity : '0'}
                 </p>
               </div>
               <button
@@ -86,6 +89,7 @@ function Navbar({setSideOpen}) {
               {navItems.map((item, index) => (
                 <NavLink
                   to={item.link}
+                  onClick={() => setIsOpen(false)}
                   key={index}
                   className={({ isActive }) =>
                     `px-3 py-2 mx-3 mt-2 text-[16px] lg:mt-0 border-b lg:border-none rounded-md transition-colors duration-300 transform 
@@ -119,11 +123,11 @@ function Navbar({setSideOpen}) {
                 className="cursor-pointer"
               />
             </div>
-            <div className="flex gap-3 p-3 text-primary relative ">
-              <span>$0.00</span>
+            <div className="flex gap-3 p-3 text-primary relative cursor-pointer">
+              <span>${totalPrice > 0 ? totalPrice : '0.00'}</span>
               <FaBasketShopping size={25} className="cursor-pointer hover:text-secondary" onClick={() => setSideOpen(true)}/>
               <p className="absolute top-0 right-0 w-5 h-5 p-2 flex items-center justify-center text-white bg-primary rounded-full">
-                0
+                {totalQuantity > 0 ? totalQuantity : '0'}
               </p>
             </div>
           </div>
